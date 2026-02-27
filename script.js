@@ -122,3 +122,13 @@ countrySelect.addEventListener("change", function() {
         countryResult.style.transform = "translateY(0)";
     }, 100);
 });
+function searchDestinations() {
+    const query = document.getElementById('searchBox').value;
+    const results = document.getElementById('searchResults');
+    results.innerHTML = `<p>You searched for: ${query}</p>`;
+}
+
+function clearSearch() {
+    document.getElementById('searchBox').value = '';
+    document.getElementById('searchResults').innerHTML = '';
+}

@@ -292,3 +292,41 @@ img:hover {
 .card:hover {
     box-shadow: 0 30px 70px rgba(176,141,87,0.3);
 }
+/* CENTER SEARCH SECTION */
+.search-section {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically (if height is set) */
+    flex-wrap: wrap;         /* makes it wrap nicely on smaller screens */
+    gap: 10px;               /* space between input and buttons */
+    margin: 40px 0;          /* spacing from other sections */
+}
+
+/* STYLE SEARCH INPUT */
+#searchBox {
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    max-width: 90%;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}
+
+/* STYLE BUTTONS */
+.search-section button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff7f50, #ffb347);
+    color: #fff;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.search-section button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
