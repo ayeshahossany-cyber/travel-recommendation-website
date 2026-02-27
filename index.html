@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nocturne Voyages</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Film Effects -->
+<div class="film-grain"></div>
+<div class="dust"></div>
+
+<header>
+    <div class="logo">Nocturne Voyages</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero parallax">
+    <h1 class="reveal">Nocturne Journeys</h1>
+    <p class="reveal-delay">
+        Somewhere between dreams and footsteps, the world whispers its secrets.
+    </p>
+</section>
+<!-- MAIN CONTENT -->
+<section class="cards">
+
+    <!-- BEACH -->
+    <div class="card reveal">
+        <h2>Ocean Reverie</h2>
+        <button onclick="toggleBeach()">Unfold</button>
+
+        <div id="beach" class="hidden content-box">
+            <h3>Le Morne, Mauritius</h3>
+            <p>
+                Salt air. Bronze sunsets. A shoreline that hums softly.
+            </p>
+            <img src="images/beach1.jpg" alt="Le Morne Beach">
+            <img src="images/beach2.jpg" alt="Mauritius Coast">
+        </div>
+    </div>
+
+    <!-- TEMPLE -->
+    <div class="card reveal">
+        <h2>Sacred Echo</h2>
+        <button onclick="toggleTemple()">Unfold</button>
+
+        <div id="temple" class="hidden content-box">
+            <h3>Grand Bassin</h3>
+            <p>
+                Still waters reflecting devotion and time.
+            </p>
+            <img src="images/temple1.jpg" alt="Grand Bassin Temple">
+            <img src="images/temple2.jpg" alt="Sacred Lake Mauritius">
+        </div>
+    </div>
+
+    <!-- COUNTRY -->
+   <div class="card reveal">
+    <h2>Distant Horizons</h2>
+
+    <select id="countrySelect">
+        <option value="">Select Destination</option>
+        <option value="japan">Japan</option>
+        <option value="france">France</option>
+    </select>
+
+    <div id="countryResult" class="content-box"></div>
+</div>
+
+</section>
+
+<!-- BACK TO TOP -->
+<button id="topBtn" onclick="scrollToTop()">↑</button>
+
+<!-- Optional Ambient Music -->
+<audio id="bgMusic" loop>
+    <source src="music/ambient.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
